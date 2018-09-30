@@ -1,0 +1,22 @@
+$TTL 86400
+@       IN SOA  master.majid.org. root.majid.org. (
+                                2014051001      ; serial
+                                        3600    ; refresh
+                                        1800    ; retry
+                                        604800  ; expire
+                                        86400   ; minimum
+)
+@               IN      NS      master.majid.org.
+@               IN      NS      slavedns.majid.org.
+@               IN      A       192.168.50.1
+@               IN      A       192.168.50.2
+@               IN      A       192.168.50.3
+@               IN      A       192.168.50.4
+@               IN      A       192.168.50.5
+@               IN      A       192.168.50.6
+master          IN      A       192.168.50.1
+slavedns        IN      A       192.168.50.200
+majid-sys       IN      A       192.168.50.2
+phoenix-0       IN      A       192.168.50.3
+phoenix-1       IN      A       192.168.50.4
+phoenix-2       IN      A       192.168.50.5

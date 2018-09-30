@@ -1,0 +1,20 @@
+$TTL 86400
+@       IN SOA	@ master.majid.org.  (
+				        2014051001 ; serial
+					3600	; refresh
+					10800	; retry
+					604800	; expire
+					86400 )	; minimum
+
+
+                IN      NS      master.majid.org.
+                IN      PTR     majid.org.
+master          IN      A       192.168.50.1
+majid-sys       IN      A       192.168.50.2
+phoenix-0       IN      A       192.168.50.3
+phoenix-1       IN      A       192.168.50.4
+
+1               IN      PTR     master.majid.org.
+2               IN      PTR     majid-sys.majid.org.
+3               IN      PTR     phoenix-0.majid.org.
+4               IN      PTR     phoenix-1.majid.org.
